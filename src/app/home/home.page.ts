@@ -46,7 +46,16 @@ L.marker([-7.770112464770944, 110.37777630624075]).addTo(this.map)
       attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
       maxZoom: 16,
     }),
-   
+  'Stamen Terrain': L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg', {
+    attribution: '&copy; <a href="https://maps.stamen.com/terrain/">Stamen Design</a>, ' +
+      '<a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; ' +
+      'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }),
+  'CartoDB Dark Matter': L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://carto.com/attributions">CartoDB</a>, ' +
+      '<a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; ' +
+      'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }),
     
   };
   
